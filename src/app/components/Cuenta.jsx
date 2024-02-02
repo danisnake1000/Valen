@@ -30,27 +30,27 @@ const Cuenta = ({ targetDate }) => {
   });
 
   return (
-    <div className="text-center">
+    <div className="text-center text-yellow-200">
       <div>
-        <h1 className="text-3xl font-bold mb-4">Cuenta regresiva</h1>
+        <h1 className="text-5xl font-bold mb-4">Cuenta regresiva</h1>
       </div>
       
-      <div className="flex justify-center">
-        <div className="bg-black text-white p-4 rounded-lg mr-2 ">
-          <div className="text-3xl font-bold">{timeLeft.days}</div>
-          <div className="text-sm">Days</div>
+      <div className="flex justify-center text-3xl font-bold text-yellow-200">
+        <div className="bg-black p-4 rounded-lg mr-2 ">
+          <div >{timeLeft.days}</div>
+          <div className="text-sm">Dias</div>
         </div>
-        <div className="bg-black text-white p-4 rounded-lg mr-2">
-          <div className="text-3xl font-bold">{timeLeft.hours}</div>
-          <div className="text-sm">Hours</div>
+        <div className="bg-black  p-4 rounded-lg mr-2">
+          <div>{timeLeft.hours}</div>
+          <div className="text-sm">Horas</div>
         </div>
-        <div className="bg-black text-white p-4 rounded-lg mr-2">
-          <div className="text-3xl font-bold">{timeLeft.minutes}</div>
-          <div className="text-sm">Minutes</div>
+        <div className="bg-black p-4 rounded-lg mr-2">
+          <div>{timeLeft.minutes}</div>
+          <div className="text-sm">Minutos</div>
         </div>
-        <div className="bg-black text-yellow-200 p-4 rounded-lg">
-          <div className="text-3xl font-bold">{timeLeft.seconds}</div>
-          <div className="text-sm">Seconds</div>
+        <div className="bg-black  p-4 rounded-lg">
+          <div>{timeLeft.seconds}</div>
+          <div className="text-sm">Segundos</div>
         </div>
       </div>
     </div>
