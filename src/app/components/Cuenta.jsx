@@ -31,7 +31,10 @@ const Cuenta = ({ targetDate }) => {
 
   return (
     <div className="text-center">
-      <h1 className="text-3xl font-bold mb-4">Countdown</h1>
+      <div>
+        <h1 className="text-3xl font-bold mb-4">Cuenta regresiva</h1>
+      </div>
+      
       <div className="flex justify-center">
         <div className="bg-black text-white p-4 rounded-lg mr-2 ">
           <div className="text-3xl font-bold">{timeLeft.days}</div>
