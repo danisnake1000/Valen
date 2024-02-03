@@ -23,7 +23,7 @@ const ubi =
 
 const Home = () => {
   return (
-    <div className="flex justify-center text-center text-pink-400 ">
+    <div className="flex justify-center flex-col text-center text-pink-400 ">
       <div>
         <div className="p-auto">
           <Image
