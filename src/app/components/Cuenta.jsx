@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const Cuenta = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -12,7 +12,7 @@ const Cuenta = ({ targetDate }) => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
@@ -30,14 +30,14 @@ const Cuenta = ({ targetDate }) => {
   });
 
   return (
-    <div className="text-center text-yellow-200">
+    <div className="text-center  text-pink-400">
       <div>
-        <h1 className="text-5xl font-bold mb-4">Cuenta regresiva</h1>
+        <h1 className="text-3xl font-bold mb-4">CUENTA REGRESIVA</h1>
       </div>
-      
-      <div className="flex justify-center text-3xl font-bold text-yellow-200">
+
+      <div className="flex justify-center text-3xl font-bold  text-pink-400">
         <div className="bg-black p-4 rounded-lg mr-2 ">
-          <div >{timeLeft.days}</div>
+          <div>{timeLeft.days}</div>
           <div className="text-sm">Dias</div>
         </div>
         <div className="bg-black  p-4 rounded-lg mr-2">
