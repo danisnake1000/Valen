@@ -1,11 +1,40 @@
 import React from "react";
 import Image from "next/image";
 import Cuenta from "./components/Cuenta.jsx";
-import Cards from "./components/Cards.jsx";
 import { Card, CardBody, Button } from "@nextui-org/react";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
-
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
+import CelebrationIcon from "@mui/icons-material/Celebration";
+import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import TableBarIcon from "@mui/icons-material/TableBar";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import AudiotrackIcon from "@mui/icons-material/Audiotrack";
 import Mesa from "./components/Mesa.jsx";
+
+import { Roboto, Pacifico,Caveat,Lato } from "next/font/google";
+
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+const pacifico = Pacifico({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+const caveat = Caveat({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+const lato = Lato({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const datos = [
   {
@@ -19,7 +48,7 @@ const datos = [
 ];
 
 const ubi =
-"https://www.google.com/maps/place/Finca+Don+Gino/@-32.9340164,-68.6770274,17z/data=!3m1!4b1!4m6!3m5!1s0x967e124c449cc7bf:0x4edfa6784aa89e2!8m2!3d-32.9340164!4d-68.6770274!16s%2Fg%2F11g020519x?entry=ttu";
+  "https://www.google.com/maps/place/Finca+Don+Gino/@-32.9340164,-68.6770274,17z/data=!3m1!4b1!4m6!3m5!1s0x967e124c449cc7bf:0x4edfa6784aa89e2!8m2!3d-32.9340164!4d-68.6770274!16s%2Fg%2F11g020519x?entry=ttu";
 
 const Home = () => {
   return (
@@ -35,36 +64,43 @@ const Home = () => {
         </div>
 
         <p className=" text-3xl pt-16 font-bold">23/03/2024</p>
-        <h1 className=" text-pink-400 font-extrabold text-6xl p-10 ">VALE</h1>
-
-        <p className="p-12 text-2xl">
-          QUIERO COMPARTIR JUNTO A VOS UNA NOCHE UNICA
-        </p>
-        <div className="border   "></div>
-        <div className="p-12">
-          <Cuenta targetDate="2024-03-23T23:59:59" />
+        <div>
+          <h1 className=" text-pink-400 font-extrabold text-6xl p-10 ">VALE</h1>
         </div>
 
-     
-        <div>
+        <div className={caveat.className}>
+          <p className="p-12 text-2xl">
+            QUIERO COMPARTIR JUNTO A VOS UNA NOCHE UNICA
+          </p>
+        </div>
+
+        <div className="border   "></div>
+        <div className="p-12">
+          <Cuenta  targetDate="2024-03-23T23:59:59" />
+        </div>
+
+        <div >
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
-            <div>
-            <h1>SALON</h1>
-            <p> FINCA DON GINO</p>
+              <div >
+                <h1>SALON</h1>
+                <p> FINCA DON GINO</p>
 
-            <div>
-              <FmdGoodIcon></FmdGoodIcon>
-              <Button
-                variant="contained"
-                radius="full"
-                color="primary"
-                size="md"
-              >
-                <a href={ubi}>UBICACION</a>
-              </Button>
-            </div>
-          </div>
+                <div>
+                  <FmdGoodIcon></FmdGoodIcon>
+                  <Button
+                    variant="contained"
+                    radius="full"
+                    color="primary"
+                    size="md"
+                  >
+                    <a href={ubi} target="_blank">
+                      UBICACION{" "}
+                    </a>
+                    <p></p>
+                  </Button>
+                </div>
+              </div>
             </CardBody>
           </Card>
         </div>
@@ -72,25 +108,73 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
+                <AccessTimeIcon />
                 <h1>HORARIO</h1>
                 <p> 21:30HS</p>
               </div>
             </CardBody>
           </Card>
         </div>
-        
-      
-         <div>
-         <Card className=" border-2 border-gray-800 rounded-lg p-4 m-4 flex justify-center text-center">
+        <div>
+          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
+                <h1>CONFIRMAR ASISTENCIA</h1>
+                <a href="https://wa.me/542614604776" target="_blank">
+                  <WhatsAppIcon />
+                </a>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+        <div>
+          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+            <CardBody className="leading-10  ">
+              <div>
+                <AudiotrackIcon />
+                <h1>ELIJE TU CANCION</h1>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+        <div>
+          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+            <CardBody className="leading-10  ">
+              <div>
+                <AssignmentIndIcon />
+                <h1>DRESS CODE</h1>
+                <p>ELEGANTE</p>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+        <div>
+          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+            <CardBody className="leading-10  ">
+              <div>
+                <CardGiftcardIcon />
+                <h1>REGALOS</h1>
+                <h2>Deposito en cuenta</h2>
+                <h2>TITULAR:</h2>
+                <h2>CBU:</h2>
+                <h2>ALIAS:</h2>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+
+        <div>
+          <Card className=" border-2 border-gray-800 rounded-lg p-4 m-4 flex justify-center text-center">
+            <CardBody className="leading-10  ">
+              <div>
+                <TableBarIcon />
                 <h1 className="text-2xl">Buscar tu mesa</h1>
 
                 <Mesa datos={datos}></Mesa>
               </div>
             </CardBody>
           </Card>
-         </div>
+        </div>
         {/* <div>
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
@@ -101,10 +185,12 @@ const Home = () => {
             </CardBody>
           </Card>
         </div> */}
+
         <div>
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
+                <PhotoCameraIcon />
                 <h1>FOTOS CENA</h1>
                 <p> PROXIMAMENTE....</p>
               </div>
@@ -115,13 +201,13 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
+                <PhotoCameraIcon />
                 <h1>FOTOS BAILE</h1>
                 <p> PROXIMAMENTE....</p>
               </div>
             </CardBody>
           </Card>
         </div>
-        
       </div>
     </div>
   );
