@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Cuenta from "./components/Cuenta.jsx";
 import { Card, CardBody, Button } from "@nextui-org/react";
@@ -65,7 +66,7 @@ const Home = () => {
 
         <p className=" text-3xl pt-16 font-bold">23/03/2024</p>
         <div>
-          <h1 className=" text-pink-400 font-extrabold text-6xl p-10 ">VALE</h1>
+          <h1 className="text-white font-extrabold text-6xl p-10 ">VALE</h1>
         </div>
 
         <div className={caveat.className}>
@@ -78,70 +79,76 @@ const Home = () => {
         <div className="p-12">
           <Cuenta targetDate="2024-03-23T23:59:59" />
         </div>
+        <Link href={ubi} target="_blank">
+          <div>
+            <Card className=" border-2  rounded-lg p-5 m-4 flex justify-center text-center ">
+              <CardBody className=" ">
+                <div className="text-2xl leading-10 ">
+                  <h1 className="text-4xl ">SALON</h1>
+                  <p> FINCA DON GINO</p>
 
-        <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center ">
-            <CardBody className=" ">
-              <div className="text-2xl leading-10 ">
-                <h1 className="text-4xl ">SALON</h1>
-                <p> FINCA DON GINO</p>
-
-                <div>
-                  <FmdGoodIcon className="text-4xl m-2"></FmdGoodIcon>
-                  <Button
-                    variant="contained"
-                    radius="full"
-                    color="primary"
-                    size="md"
-                  >
-                    <a href={ubi} target="_blank">
-                      UBICACION{" "}
-                    </a>
-                    <p></p>
-                  </Button>
+                  <div>
+                    <FmdGoodIcon className="text-4xl m-2 text-white"></FmdGoodIcon>
+                    <Button
+                      variant="contained"
+                      radius="full"
+                      color="primary"
+                      size="md"
+                    >
+                     
+                      <p> UBICACION</p>
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </CardBody>
-          </Card>
-        </div>
+              </CardBody>
+            </Card>
+          </div>
+        </Link>
+
         <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+          <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <AccessTimeIcon className="text-4xl"/>
+                <AccessTimeIcon className="text-4xl text-white m-5" />
                 <h1 className="text-4xl m-1">HORARIO</h1>
                 <p className="text-2xl"> 21:00HS</p>
               </div>
             </CardBody>
           </Card>
         </div>
+
+        <Link href="https://wa.me/542614604776" target="_blank">
+          <div>
+            <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
+              <CardBody className="leading-10  ">
+                <div>
+                  <h1 className="text-2xl">CONFIRMAR ASISTENCIA</h1>
+                  <div >
+                    <WhatsAppIcon className="text-4xl text-white m-5" />
+                  <p className="text-xl">WHATAPP</p>
+                  </div>
+                  
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </Link>
+
         <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+          <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <h1 className="text-2xl">CONFIRMAR ASISTENCIA</h1>
-                <a href="https://wa.me/542614604776" target="_blank">
-                  <WhatsAppIcon className="text-4xl"/>
-                </a>
-              </div>
-            </CardBody>
-          </Card>
-        </div>
-        <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
-            <CardBody className="leading-10  ">
-              <div>
-                <AudiotrackIcon className="text-4xl" />
+                <AudiotrackIcon className="text-4xl text-white m-5" />
                 <h1 className="text-2xl">ELIJE TU CANCION</h1>
               </div>
             </CardBody>
           </Card>
         </div>
         <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+          <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <AssignmentIndIcon className="text-4xl"/>
+                <AssignmentIndIcon className="text-4xl text-white m-5" />
                 <h1 className="text-2xl">DRESS CODE</h1>
                 <p className="text-2xl">FORMAL</p>
               </div>
@@ -149,15 +156,20 @@ const Home = () => {
           </Card>
         </div>
         <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+          <Card className=" border-2  rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div className="text-2xl ">
-                <CardGiftcardIcon className="text-4xl" />
+                <CardGiftcardIcon className="text-5xl text-white m-5" />
                 <h1>REGALOS</h1>
-                <h2>Deposito en cuenta</h2>
-                <h2>TITULAR: Rivero Mariela</h2>
+                <p>Si te interesa hacer un regalo este es mi CBU</p>
+
                 <h2>CBU: 0720441288000035590668</h2>
                 <h2>ALIAS: mis-15-vale</h2>
+                <h2>TITULAR: Rivero Mariela</h2>
+                <p>
+                  También en el salón habrá una urna, pero tu presencia es mi
+                  mayor regalo
+                </p>
               </div>
             </CardBody>
           </Card>
@@ -187,10 +199,10 @@ const Home = () => {
         </div> */}
 
         <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+          <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <PhotoCameraIcon className="text-4xl" />
+                <PhotoCameraIcon className="text-4xl text-white m-5" />
                 <h1 className="text-2xl">FOTOS CENA</h1>
                 <p className="text-2xl"> PROXIMAMENTE....</p>
               </div>
@@ -198,10 +210,10 @@ const Home = () => {
           </Card>
         </div>
         <div>
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
+          <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <PhotoCameraIcon className="text-4xl" />
+                <PhotoCameraIcon className="text-4xl text-white m-5" />
                 <h1 className="text-2xl">FOTOS BAILE</h1>
                 <p className="text-2xl"> PROXIMAMENTE....</p>
               </div>
