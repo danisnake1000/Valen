@@ -13,7 +13,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import AudiotrackIcon from "@mui/icons-material/Audiotrack";
 import Mesa from "./components/Mesa.jsx";
 
-import { Roboto, Pacifico,Caveat,Lato } from "next/font/google";
+import { Roboto, Pacifico, Caveat, Lato } from "next/font/google";
 
 const roboto = Roboto({
   weight: "400",
@@ -76,18 +76,18 @@ const Home = () => {
 
         <div className="border   "></div>
         <div className="p-12">
-          <Cuenta  targetDate="2024-03-23T23:59:59" />
+          <Cuenta targetDate="2024-03-23T23:59:59" />
         </div>
 
-        <div >
-          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
-            <CardBody className="leading-10  ">
-              <div >
-                <h1>SALON</h1>
+        <div>
+          <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center ">
+            <CardBody className=" ">
+              <div className="text-2xl leading-10 ">
+                <h1 className="text-4xl ">SALON</h1>
                 <p> FINCA DON GINO</p>
 
                 <div>
-                  <FmdGoodIcon></FmdGoodIcon>
+                  <FmdGoodIcon className="text-4xl m-2"></FmdGoodIcon>
                   <Button
                     variant="contained"
                     radius="full"
@@ -108,9 +108,9 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <AccessTimeIcon />
-                <h1>HORARIO</h1>
-                <p> 21:30HS</p>
+                <AccessTimeIcon className="text-4xl"/>
+                <h1 className="text-4xl m-1">HORARIO</h1>
+                <p className="text-2xl"> 21:00HS</p>
               </div>
             </CardBody>
           </Card>
@@ -119,9 +119,9 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <h1>CONFIRMAR ASISTENCIA</h1>
+                <h1 className="text-2xl">CONFIRMAR ASISTENCIA</h1>
                 <a href="https://wa.me/542614604776" target="_blank">
-                  <WhatsAppIcon />
+                  <WhatsAppIcon className="text-4xl"/>
                 </a>
               </div>
             </CardBody>
@@ -131,8 +131,8 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <AudiotrackIcon />
-                <h1>ELIJE TU CANCION</h1>
+                <AudiotrackIcon className="text-4xl" />
+                <h1 className="text-2xl">ELIJE TU CANCION</h1>
               </div>
             </CardBody>
           </Card>
@@ -141,9 +141,9 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <AssignmentIndIcon />
-                <h1>DRESS CODE</h1>
-                <p>ELEGANTE</p>
+                <AssignmentIndIcon className="text-4xl"/>
+                <h1 className="text-2xl">DRESS CODE</h1>
+                <p className="text-2xl">FORMAL</p>
               </div>
             </CardBody>
           </Card>
@@ -151,19 +151,19 @@ const Home = () => {
         <div>
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
-              <div>
-                <CardGiftcardIcon />
+              <div className="text-2xl ">
+                <CardGiftcardIcon className="text-4xl" />
                 <h1>REGALOS</h1>
                 <h2>Deposito en cuenta</h2>
-                <h2>TITULAR:</h2>
-                <h2>CBU:</h2>
-                <h2>ALIAS:</h2>
+                <h2>TITULAR: Rivero Mariela</h2>
+                <h2>CBU: 0720441288000035590668</h2>
+                <h2>ALIAS: mis-15-vale</h2>
               </div>
             </CardBody>
           </Card>
         </div>
 
-        <div>
+        {/* <div>
           <Card className=" border-2 border-gray-800 rounded-lg p-4 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
@@ -174,7 +174,7 @@ const Home = () => {
               </div>
             </CardBody>
           </Card>
-        </div>
+        </div> */}
         {/* <div>
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
@@ -190,9 +190,9 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <PhotoCameraIcon />
-                <h1>FOTOS CENA</h1>
-                <p> PROXIMAMENTE....</p>
+                <PhotoCameraIcon className="text-4xl" />
+                <h1 className="text-2xl">FOTOS CENA</h1>
+                <p className="text-2xl"> PROXIMAMENTE....</p>
               </div>
             </CardBody>
           </Card>
@@ -201,9 +201,9 @@ const Home = () => {
           <Card className=" border-2 border-gray-800 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <PhotoCameraIcon />
-                <h1>FOTOS BAILE</h1>
-                <p> PROXIMAMENTE....</p>
+                <PhotoCameraIcon className="text-4xl" />
+                <h1 className="text-2xl">FOTOS BAILE</h1>
+                <p className="text-2xl"> PROXIMAMENTE....</p>
               </div>
             </CardBody>
           </Card>
