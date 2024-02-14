@@ -55,7 +55,7 @@ const Home = () => {
         <div className="p-auto">
           <Image
             src="/imagenes/vale4.jpg"
-            width={700}
+            width={500}
             height={500}
             alt="Picture of the author"
             priority={true}
@@ -82,10 +82,12 @@ const Home = () => {
             <Card className=" border-2  rounded-lg p-5 m-4 flex justify-center text-center ">
               <CardBody >
                 <div className="text-2xl leading-10 ">
+                  
                   <h1 className="text-4xl ">SALON</h1>
                   <p> FINCA DON GINO</p>
 
                   <div>
+                    <FmdGoodIcon className="text-5xl text-white m-5"/>
                   {/* <Ubicacion/> */}
                     <Button
                       variant="contained"
@@ -106,6 +108,7 @@ const Home = () => {
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
+                <AccessTimeIcon className="text-5xl text-white m-5"/>
               {/* <Hora/> */}
                 <h1 className="text-4xl m-1">HORARIO</h1>
                 <p className="text-2xl"> 21:00HS</p>
@@ -119,7 +122,7 @@ const Home = () => {
             <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
               <CardBody className="leading-10  ">
                 <div className="text-6xl" >
-                    <WhatsAppIcon className="  "  fontSize="large" />
+                    <WhatsAppIcon className="text-5xl text-white m-5"  fontSize="large" />
                   <h1 className="text-2xl">CONFIRMAR ASISTENCIA</h1>
                   <div>
                     <p className="text-xl">WHATSAPP</p>
@@ -134,6 +137,7 @@ const Home = () => {
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
+                <AudiotrackIcon className= "text-5xl text-white m-5"/>
                 {/* <Musica/> */}
                 <h1 className="text-2xl">RECOMIENDA UNA CANCION</h1>
               </div>
@@ -144,6 +148,7 @@ const Home = () => {
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
+                <AssignmentIndIcon className= "text-5xl text-white m-5"/>
                {/* <Formal/> */}
                 <h1 className="text-2xl">DRESS CODE</h1>
                 <p className="text-2xl">FORMAL</p>
@@ -157,7 +162,7 @@ const Home = () => {
             <Card className=" border-2  rounded-lg p-5 m-4 flex justify-center text-center">
               <CardBody className="leading-10  ">
                 <div className="text-2xl ">
-                  {/* <CardGiftcardIcon className="text-5xl text-white m-5" /> */}
+                  <CardGiftcardIcon className="text-5xl text-white m-5" />
                   {/* <Regalo /> */}
                   <h1>REGALOS</h1>
 
@@ -200,6 +205,7 @@ const Home = () => {
             <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center ">
               <CardBody className="leading-10  ">
                 <div>
+                <PhotoCameraIcon className="text-5xl text-white m-5"/>
                   {/* <Icons></Icons> */}
                   <h1 className="text-2xl">FOTOS CENA</h1>
                   <p className="text-2xl"> PROXIMAMENTE....</p>
@@ -211,6 +217,7 @@ const Home = () => {
             <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
               <CardBody className="leading-10  ">
                 <div>
+                  <PhotoCameraIcon className="text-5xl text-white m-5"/>
                   {/* <Icons></Icons> */}
                   <h1 className="text-2xl">FOTOS BAILE</h1>
                   <p className="text-2xl"> PROXIMAMENTE....</p>
