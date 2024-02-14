@@ -86,7 +86,7 @@ const Home = () => {
                   <p> FINCA DON GINO</p>
 
                   <div>
-                  <Ubicacion/>
+                  {/* <Ubicacion/> */}
                     <Button
                       variant="contained"
                       radius="full"
@@ -106,7 +106,7 @@ const Home = () => {
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-              <Hora/>
+              {/* <Hora/> */}
                 <h1 className="text-4xl m-1">HORARIO</h1>
                 <p className="text-2xl"> 21:00HS</p>
               </div>
@@ -134,7 +134,7 @@ const Home = () => {
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-                <Musica/>
+                {/* <Musica/> */}
                 <h1 className="text-2xl">RECOMIENDA UNA CANCION</h1>
               </div>
             </CardBody>
@@ -144,7 +144,7 @@ const Home = () => {
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
               <div>
-               <Formal/>
+               {/* <Formal/> */}
                 <h1 className="text-2xl">DRESS CODE</h1>
                 <p className="text-2xl">FORMAL</p>
               </div>
@@ -158,7 +158,7 @@ const Home = () => {
               <CardBody className="leading-10  ">
                 <div className="text-2xl ">
                   {/* <CardGiftcardIcon className="text-5xl text-white m-5" /> */}
-                  <Regalo />
+                  {/* <Regalo /> */}
                   <h1>REGALOS</h1>
 
                   <p>Tu presencia es lo mas importante</p>
@@ -200,7 +200,7 @@ const Home = () => {
             <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center ">
               <CardBody className="leading-10  ">
                 <div>
-                  <Icons></Icons>
+                  {/* <Icons></Icons> */}
                   <h1 className="text-2xl">FOTOS CENA</h1>
                   <p className="text-2xl"> PROXIMAMENTE....</p>
                 </div>
@@ -211,7 +211,7 @@ const Home = () => {
             <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
               <CardBody className="leading-10  ">
                 <div>
-                  <Icons></Icons>
+                  {/* <Icons></Icons> */}
                   <h1 className="text-2xl">FOTOS BAILE</h1>
                   <p className="text-2xl"> PROXIMAMENTE....</p>
                 </div>
