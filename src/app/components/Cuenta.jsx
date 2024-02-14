@@ -30,12 +30,12 @@ const Cuenta = ({ targetDate }) => {
   });
 
   return (
-    <div className="text-center  text-pink-400">
+    <div className="text-center text-yellow-200">
       <div>
         <h1 className="text-3xl font-bold mb-4 text-white">CUENTA REGRESIVA</h1>
       </div>
 
-      <div className="flex justify-center text-3xl font-bold  text-pink-400">
+      <div className="flex justify-center text-3xl font-bold text-yellow-200">
         <div className="bg-black p-4 rounded-lg mr-2 ">
           <div>{timeLeft.days}</div>
           <div className="text-base text-white">Dias</div>
