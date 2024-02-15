@@ -12,6 +12,8 @@ import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import TableBarIcon from "@mui/icons-material/TableBar";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import AudiotrackIcon from "@mui/icons-material/Audiotrack";
+import vale3 from "../../public/imagenes/vale3.jpg"
+import vale4 from "../../public/imagenes/vale4.jpg"
 import Mesa from "./components/Mesa.jsx";
 
 import { Caveat, Cinzel, Abril_Fatface } from "next/font/google";
@@ -54,11 +56,11 @@ const Home = () => {
       <div className={cinzel.className}>
         <div className="p-auto">
           <Image
-            src="/imagenes/vale4.jpg"
-            width={500}
-            height={500}
+            src={vale4}
+            width={1080}
+            height={854}
             alt="Picture of the author"
-            priority={true}
+           
           />
         </div>
 
@@ -86,8 +88,8 @@ const Home = () => {
                   <h1 className="text-4xl ">SALON</h1>
                   <p> FINCA DON GINO</p>
 
-                  <div>
-                    <FmdGoodIcon className="text-5xl text-white m-5"/>
+                  <div >
+                    <FmdGoodIcon  className="text-5xl text-white m-5"  fontSize="large"/>
                   {/* <Ubicacion/> */}
                     <Button
                       variant="contained"
@@ -107,8 +109,8 @@ const Home = () => {
         <div>
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
-              <div>
-                <AccessTimeIcon className="text-5xl text-white m-5"/>
+              <div className="text-6xl">
+                <AccessTimeIcon  className="text-5xl text-white m-5"  fontSize="large"/>
               {/* <Hora/> */}
                 <h1 className="text-4xl m-1">HORARIO</h1>
                 <p className="text-2xl"> 21:00HS</p>
@@ -136,8 +138,8 @@ const Home = () => {
         <div>
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
-              <div>
-                <AudiotrackIcon className= "text-5xl text-white m-5"/>
+              <div className="text-6xl">
+                <AudiotrackIcon className="text-5xl text-white m-5"  fontSize="large" />
                 {/* <Musica/> */}
                 <h1 className="text-2xl">RECOMIENDA UNA CANCION</h1>
               </div>
@@ -147,8 +149,8 @@ const Home = () => {
         <div>
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
-              <div>
-                <AssignmentIndIcon className= "text-5xl text-white m-5"/>
+              <div className="text-6xl">
+                <AssignmentIndIcon className="text-5xl text-white m-5"  fontSize="large"/>
                {/* <Formal/> */}
                 <h1 className="text-2xl">DRESS CODE</h1>
                 <p className="text-2xl">FORMAL</p>
@@ -161,8 +163,8 @@ const Home = () => {
           <div>
             <Card className=" border-2  rounded-lg p-5 m-4 flex justify-center text-center">
               <CardBody className="leading-10  ">
-                <div className="text-2xl ">
-                  <CardGiftcardIcon className="text-5xl text-white m-5" />
+                <div className="text-2xl">
+                  <CardGiftcardIcon className="text-5xl text-white m-5"  fontSize="large" />
                   {/* <Regalo /> */}
                   <h1>REGALOS</h1>
 
@@ -204,8 +206,8 @@ const Home = () => {
           <div>
             <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center ">
               <CardBody className="leading-10  ">
-                <div>
-                <PhotoCameraIcon className="text-5xl text-white m-5"/>
+                <div className="text-6xl">
+                <PhotoCameraIcon className="text-5xl text-white m-5"  fontSize="large"/>
                   {/* <Icons></Icons> */}
                   <h1 className="text-2xl">FOTOS CENA</h1>
                   <p className="text-2xl"> PROXIMAMENTE....</p>
@@ -216,8 +218,8 @@ const Home = () => {
           <div>
             <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
               <CardBody className="leading-10  ">
-                <div>
-                  <PhotoCameraIcon className="text-5xl text-white m-5"/>
+                <div className="text-6xl">
+                  <PhotoCameraIcon className="text-5xl text-white m-5"  fontSize="large"/>
                   {/* <Icons></Icons> */}
                   <h1 className="text-2xl">FOTOS BAILE</h1>
                   <p className="text-2xl"> PROXIMAMENTE....</p>
@@ -232,11 +234,11 @@ const Home = () => {
           <h1 className={abril.className}>TE ESPERO</h1>
           <div className="p-10">
             <Image
-            src="/imagenes/vale3.jpg"
-            width={700}
-            height={500}
+            src={vale3}
+            width={854}
+            height={1080}
             alt="Picture of the author"
-            priority={true}
+           
           />
           </div>
           
