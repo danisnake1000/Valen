@@ -5,7 +5,7 @@ import Cuenta from "./components/Cuenta.jsx";
 import { Card, CardBody, Button } from "@nextui-org/react";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
-
+import vale3 from "../../public/imagenes/vale3.jpg"
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
@@ -50,9 +50,9 @@ const Home = () => {
       <div className={cinzel.className}>
         <div className="p-auto">
           <Image
-            src="/public/imagenes/valen1.jpg"
-            width={500}
-            height={500}
+            src={vale3}
+            width={850}
+            height={1080}
             alt="Picture of the author"
            
           />
@@ -228,7 +228,7 @@ const Home = () => {
           <h1 className={abril.className}>TE ESPERO</h1>
           <div className="p-10">
             <Image
-            src="/public/imagenes/valen1.jpg"
+            src={vale3}
             width={854}
             height={1080}
             alt="Picture of the author"
