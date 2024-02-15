@@ -56,9 +56,9 @@ const Home = () => {
       <div className={cinzel.className}>
         <div className="p-auto">
           <Image
-            src={vale4}
-            width={1080}
-            height={854}
+            src="/public/imagenes/valen1.jpg"
+            width={500}
+            height={500}
             alt="Picture of the author"
            
           />
@@ -234,7 +234,7 @@ const Home = () => {
           <h1 className={abril.className}>TE ESPERO</h1>
           <div className="p-10">
             <Image
-            src={vale3}
+            src="/public/imagenes/valen1.jpg"
             width={854}
             height={1080}
             alt="Picture of the author"
