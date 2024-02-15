@@ -6,6 +6,7 @@ import { Card, CardBody, Button } from "@nextui-org/react";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import vale3 from "../../public/imagenes/vale3.jpg"
+import vale4 from "../../public/imagenes/vale4.jpg"
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
@@ -48,15 +49,16 @@ const Home = () => {
   return (
     <div className="flex justify-center flex-col text-center text-yellow-200 ">
       <div className={cinzel.className}>
-        <div className="p-auto">
+        <div  className="xl:flex justify-center text-center ">
           <Image
-            src={vale3}
-            width={850}
-            height={1080}
+            src={vale4}
+            width={1280}
+            height={854}
             alt="Picture of the author"
            
           />
         </div>
+       
 
         <p className=" text-3xl pt-16 font-bold">23/03/2024</p>
         <div className={abril.className}>
@@ -71,7 +73,7 @@ const Home = () => {
 
         <div className="border   "></div>
         <div className="p-12">
-          <Cuenta targetDate="2024-03-23T23:59:59" />
+          <Cuenta targetDate="2024-03-23T23:59:59"  />
         </div>
         <Link href={ubi} target="_blank">
           <div>
@@ -230,7 +232,7 @@ const Home = () => {
             <Image
             src={vale3}
             width={854}
-            height={1080}
+            height={1280}
             alt="Picture of the author"
            
           />
