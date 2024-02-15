@@ -5,24 +5,18 @@ import Cuenta from "./components/Cuenta.jsx";
 import { Card, CardBody, Button } from "@nextui-org/react";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
-import CelebrationIcon from "@mui/icons-material/Celebration";
+
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import TableBarIcon from "@mui/icons-material/TableBar";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import AudiotrackIcon from "@mui/icons-material/Audiotrack";
-import vale3 from "../../public/imagenes/vale3.jpg"
-import vale4 from "../../public/imagenes/vale4.jpg"
-import Mesa from "./components/Mesa.jsx";
 
-import { Caveat, Cinzel, Abril_Fatface } from "next/font/google";
-import { Icons } from "./components/Icons.jsx";
-import { Regalo } from "./components/Regalo.jsx";
-import { Hora } from "./components/Hora.jsx";
-import { Ubicacion } from "./components/Ubicacion.jsx";
-import { Formal } from "./components/Formal.jsx";
-import { Musica } from "./components/Musica.jsx";
+
+
+import { Cinzel, Abril_Fatface } from "next/font/google";
+
 
 const cinzel = Cinzel({
   weight: "400",
