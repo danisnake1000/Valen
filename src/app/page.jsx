@@ -46,13 +46,12 @@ const Home = () => {
   return (
     <div className="flex justify-center flex-col text-center text-yellow-200 ">
       <div className={cinzel.className}>
-        <div  className="xl:flex justify-center text-center ">
+        <div className="xl:flex justify-center text-center ">
           <Image
             src={vale4}
             width={1280}
             height={854}
             alt="Picture of the author"
-           
           />
         </div>
 
@@ -92,7 +91,7 @@ const Home = () => {
                       size="md"
                     >
                     </Button> */}
-                      <p> UBICACION</p>
+                    <p> UBICACION</p>
                   </div>
                 </div>
               </CardBody>
@@ -108,7 +107,7 @@ const Home = () => {
                   className="text-5xl text-white m-5"
                   fontSize="large"
                 />
-           
+
                 <h1 className="text-4xl m-1">HORARIO</h1>
                 <p className="text-2xl"> 21:00HS</p>
               </div>
@@ -134,21 +133,23 @@ const Home = () => {
             </Card>
           </div>
         </Link>
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd2FQoIpCG3QYqtPeosZQJK9ugvADoDXPVmUf2L_kuo18zrTw/viewform?usp=sf_link" target="_blank">
+          <div>
+            <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
+              <CardBody className="leading-10  ">
+                <div className="text-6xl">
+                  <AudiotrackIcon
+                    className="text-5xl text-white m-5"
+                    fontSize="large"
+                  />
 
-        <div>
-          <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
-            <CardBody className="leading-10  ">
-              <div className="text-6xl">
-                <AudiotrackIcon
-                  className="text-5xl text-white m-5"
-                  fontSize="large"
-                />
-            
-                <h1 className="text-2xl">RECOMIENDA UNA CANCION</h1>
-              </div>
-            </CardBody>
-          </Card>
-        </div>
+                  <h1 className="text-2xl">RECOMIENDA UNA CANCION</h1>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </Link>
+
         <div>
           <Card className=" border-2 rounded-lg p-5 m-4 flex justify-center text-center">
             <CardBody className="leading-10  ">
@@ -157,7 +158,7 @@ const Home = () => {
                   className="text-5xl text-white m-5"
                   fontSize="large"
                 />
-               
+
                 <h1 className="text-2xl">DRESS CODE</h1>
                 <p className="text-2xl">FORMAL</p>
               </div>
